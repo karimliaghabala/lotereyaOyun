@@ -16,7 +16,7 @@ let numberP5 = document.createElement("p");
 let numberP6 = document.createElement("p");
 let numberP7 = document.createElement("p");
 let buttonClick = document.createElement("button");
-divContainer.className="container";
+divContainer.className = "container";
 body.append(divContainer);
 body.append(divButton);
 divButton.append(buttonClick)
@@ -27,23 +27,47 @@ number4.append(numberP4);
 number5.append(numberP5);
 number6.append(numberP6);
 number7.append(numberP7);
-number1.className="number";
-number2.className="number";
-number3.className="number";
-number4.className="number";
-number5.className="number";
-number6.className="number";
-number7.className="number";
-divContainer.append(number1,number2,number3,number4,number5,number6,number7)
-numberP6.innerText="+";
-buttonClick.innerText="Oyuna başla";
+number1.className = "number";
+number2.className = "number";
+number3.className = "number";
+number4.className = "number";
+number5.className = "number";
+number6.className = "number";
+number7.className = "number";
+divContainer.append(number1, number2, number3, number4, number5, number6, number7)
+numberP6.innerText = "+";
+buttonClick.innerText = "Oyuna başla";
 
-buttonClick.addEventListener("click", ()=>{
-    
-        numberP1.innerText = Math.floor(Math.random()*10);
-        numberP2.innerText = Math.floor(Math.random()*10);
-        numberP3.innerText = Math.floor(Math.random()*10);
-        numberP4.innerText = Math.floor(Math.random()*10);
-        numberP5.innerText = Math.floor(Math.random()*10);
-        numberP7.innerText = Math.floor(Math.random()*10);    
+buttonClick.addEventListener("click", () => {
+    for (var i = 0; i < 10; i++) {
+        setTimeout(() => {
+            numberP1.innerText = Math.floor(Math.random() * 10);
+        }, i * 50)
+    }
+    for (var i = 0; i < 20; i++) {
+        setTimeout(() => {
+            numberP2.innerText = Math.floor(Math.random() * 10);
+        }, i * 50)
+    }
+    for (var i = 0; i < 30; i++) {
+        setTimeout(() => {
+            numberP3.innerText = Math.floor(Math.random() * 10);
+        }, i * 50)
+    }
+    for (var i = 0; i < 45; i++) {
+        setTimeout(() => {
+            numberP4.innerText = Math.floor(Math.random() * 10);
+        }, i * 50)
+    }
+    for (var i = 0; i < 60; i++) {
+        setTimeout(() => {
+            numberP5.innerText = Math.floor(Math.random() * 10);
+        }, i * 50)
+    }
+    for (var i = 0; i < 80; i++) {
+        setTimeout(() => {
+            numberP7.innerText = Math.floor(Math.random() * 10);
+        }, i * 50)
+    }
+
 })

@@ -19,6 +19,9 @@ body {
 .container>:nth-child(6){
     background-color: blue;
 }
+.container>:nth-child(6)>p{
+    color: white;
+}
 .number{
     width: 50px;
     height: 50px;
