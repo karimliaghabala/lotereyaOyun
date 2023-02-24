@@ -74,23 +74,25 @@ buttonClick.addEventListener("click", () => {
     }
 })
 buttonClickGameResult.addEventListener("click", () => {
-    if (numberP1.innerText === numberP2.innerText === numberP7.innerText) {
+    if ((numberP1.innerText[0] === numberP2.innerText[0]) === numberP7.innerText[0]) {
         alert("SİZİN BİLET UDUŞLUDUR")
-    } else if (numberP1.innerText && numberP4.innerText === numberP7.innerText) {
+    } else if ((numberP1.innerText[0] && numberP3.innerText[0]) === numberP7.innerText[0]) {
         alert("SİZİN BİLET UDUŞLUDUR")
-    } else if (numberP1.innerText && numberP5.innerText === numberP7.innerText) {
+    }else if ((numberP1.innerText[0] && numberP4.innerText[0]) === numberP7.innerText[0]) {
         alert("SİZİN BİLET UDUŞLUDUR")
-    } else if (numberP2.innerText && numberP3.innerText === numberP7.innerText) {
+    } else if ((numberP1.innerText[0] && numberP5.innerText[0]) === numberP7.innerText[0]) {
         alert("SİZİN BİLET UDUŞLUDUR")
-    } else if (numberP2.innerText && numberP4.innerText === numberP7.innerText) {
+    } else if ((numberP2.innerText[0] && numberP3.innerText[0]) === numberP7.innerText[0]) {
         alert("SİZİN BİLET UDUŞLUDUR")
-    } else if (numberP2.innerText && numberP5.innerText === numberP7.innerText) {
+    } else if ((numberP2.innerText[0] && numberP4.innerText[0]) === numberP7.innerText[0]) {
         alert("SİZİN BİLET UDUŞLUDUR")
-    } else if (numberP3.innerText && numberP4.innerText === numberP7.innerText) {
+    } else if ((numberP2.innerText[0] && numberP5.innerText[0]) === numberP7.innerText[0]) {
         alert("SİZİN BİLET UDUŞLUDUR")
-    } else if (numberP3.innerText && numberP5.innerText === numberP7.innerText) {
+    } else if ((numberP3.innerText[0] && numberP4.innerText[0]) === numberP7.innerText[0]) {
         alert("SİZİN BİLET UDUŞLUDUR")
-    } else if (numberP4.innerText && numberP5.innerText === numberP7.innerText) {
+    } else if ((numberP3.innerText[0] && numberP5.innerText[0]) === numberP7.innerText[0]) {
+        alert("SİZİN BİLET UDUŞLUDUR")
+    } else if ((numberP4.innerText[0] && numberP5.innerText[0]) === numberP7.innerText[0]) {
         alert("SİZİN BİLET UDUŞLUDUR")
     }
     else {
