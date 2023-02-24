@@ -42,7 +42,7 @@ button{
     height: 30px;
     position: relative;
     top: 430px;
-    left: 50%;
+    left: 42%;
     transform: translate(-50%,-50%);
     background-color: chartreuse;
     border: 1px dotted ;

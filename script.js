@@ -16,10 +16,12 @@ let numberP5 = document.createElement("p");
 let numberP6 = document.createElement("p");
 let numberP7 = document.createElement("p");
 let buttonClick = document.createElement("button");
+let buttonClickGameResult = document.createElement("button");
 divContainer.className = "container";
 body.append(divContainer);
 body.append(divButton);
 divButton.append(buttonClick)
+divButton.append(buttonClickGameResult)
 number1.append(numberP1);
 number2.append(numberP2);
 number3.append(numberP3);
@@ -37,6 +39,7 @@ number7.className = "number";
 divContainer.append(number1, number2, number3, number4, number5, number6, number7)
 numberP6.innerText = "+";
 buttonClick.innerText = "Oyuna başla";
+buttonClickGameResult.innerText = "Uduşu yoxla";
 
 buttonClick.addEventListener("click", () => {
     for (var i = 0; i < 10; i++) {
@@ -69,5 +72,28 @@ buttonClick.addEventListener("click", () => {
             numberP7.innerText = Math.floor(Math.random() * 10);
         }, i * 50)
     }
-
+})
+buttonClickGameResult.addEventListener("click", () => {
+    if (numberP1.innerText === numberP2.innerText === numberP7.innerText) {
+        alert("SİZİN BİLET UDUŞLUDUR")
+    } else if (numberP1.innerText && numberP4.innerText === numberP7.innerText) {
+        alert("SİZİN BİLET UDUŞLUDUR")
+    } else if (numberP1.innerText && numberP5.innerText === numberP7.innerText) {
+        alert("SİZİN BİLET UDUŞLUDUR")
+    } else if (numberP2.innerText && numberP3.innerText === numberP7.innerText) {
+        alert("SİZİN BİLET UDUŞLUDUR")
+    } else if (numberP2.innerText && numberP4.innerText === numberP7.innerText) {
+        alert("SİZİN BİLET UDUŞLUDUR")
+    } else if (numberP2.innerText && numberP5.innerText === numberP7.innerText) {
+        alert("SİZİN BİLET UDUŞLUDUR")
+    } else if (numberP3.innerText && numberP4.innerText === numberP7.innerText) {
+        alert("SİZİN BİLET UDUŞLUDUR")
+    } else if (numberP3.innerText && numberP5.innerText === numberP7.innerText) {
+        alert("SİZİN BİLET UDUŞLUDUR")
+    } else if (numberP4.innerText && numberP5.innerText === numberP7.innerText) {
+        alert("SİZİN BİLET UDUŞLUDUR")
+    }
+    else {
+        alert("bəxtinizi bir daha sınayın")
+    }
 })
