@@ -128,3 +128,26 @@ button:hover{
         left: 50%;
     }
 }
+
+
+@media only screen and (max-width: 568px) {
+
+    button{
+        top: 300px;
+    }
+
+}
+@media only screen and (max-width: 812px) {
+
+    button{
+        top: 400px;
+    }
+
+}
+@media only screen and (max-width: 915px) {
+
+    button{
+        top: 500px;
+    }
+
+}
