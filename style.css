@@ -56,3 +56,43 @@ button:hover{
     color: white;
     font-size: 18px;
 }
+.header{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: cornflowerblue;
+    padding: 10px;
+    width: 300px;
+    border: 1px dotted greenyellow;
+    border-radius: 20px;
+    color: yellow;
+    font-weight: bolder;
+}
+.game-over{
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background:url("https://media.tenor.com/SJ3utmi8-qMAAAAM/chipmunk-chippunk.gif");
+    width: 200px;
+    height: 150px;
+    z-index: 1;
+    color:black;
+    text-align:center;
+    display: none;
+}
+.game-celebrate{
+    background: url("https://media.tenor.com/KmO0ZsSmxsEAAAAM/celebration-dance.gif");
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 200px;
+    height: 150px;
+    z-index: 1;
+    color:rgb(0, 247, 255);
+    text-align:center;
+    display: none;
+
+}
