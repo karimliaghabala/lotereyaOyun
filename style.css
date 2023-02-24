@@ -39,7 +39,7 @@ body {
 }
 button{
     width: 200px;
-    height: 30px;
+    height: 60px;
     position: relative;
     top: 430px;
     left: 42%;
@@ -47,9 +47,12 @@ button{
     background-color: chartreuse;
     border: 1px dotted ;
     cursor: pointer;
+    margin: 10px;
+    border-radius: 100px;
+    transition: 0.8s all;
 }
 button:hover{
     background-color: blueviolet;
     color: white;
-    font-size: 16px;
+    font-size: 18px;
 }
