@@ -128,8 +128,5 @@ buttonClickGameResult.addEventListener("click", () => {
         gameOver.style.display = 'block';
     }
 })
-buttonClickGameResult.addEventListener("click", () => {
-    if 
-})
 
 
