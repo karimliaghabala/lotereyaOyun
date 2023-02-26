@@ -93,17 +93,7 @@ buttonClick.addEventListener("click", () => {
     gameCelebrate.style.display = 'none'
 })
 buttonClickGameResult.addEventListener("click", () => {
-    if (numberP1.innerText[0] === numberP7.innerText[0]) {
-        gameOver.style.display = 'block';
-    } else if (numberP2.innerText[0] === numberP7.innerText[0]) {
-        gameOver.style.display = 'block';
-    } else if (numberP3.innerText[0] === numberP7.innerText[0]) {
-        gameOver.style.display = 'block';
-    } else if (numberP4.innerText[0] === numberP7.innerText[0]) {
-        gameOver.style.display = 'block';
-    } else if (numberP5.innerText[0] === numberP7.innerText[0]) {
-        gameOver.style.display = 'block';
-    } else if ((numberP1.innerText[0] === numberP2.innerText[0]) === numberP7.innerText[0]) {
+    if ((numberP1.innerText[0] === numberP2.innerText[0]) === numberP7.innerText[0]) {
         gameCelebrate.style.display = 'block';
     } else if ((numberP1.innerText[0] && numberP3.innerText[0]) === numberP7.innerText[0]) {
         gameCelebrate.style.display = 'block';
