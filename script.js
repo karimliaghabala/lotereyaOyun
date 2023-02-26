@@ -46,17 +46,17 @@ number4.className = "number";
 number5.className = "number";
 number6.className = "number";
 number7.className = "number";
-header.className="header";
-gameOver.className="game-over";
-gameCelebrate.className="game-celebrate";
+header.className = "header";
+gameOver.className = "game-over";
+gameCelebrate.className = "game-celebrate";
 
 divContainer.append(number1, number2, number3, number4, number5, number6, number7)
 numberP6.innerText = "+";
 buttonClick.innerText = "Oyuna başla";
 buttonClickGameResult.innerText = "Uduşu yoxla";
-header.innerText="5+1 LOTEREYASINA XOŞ GƏLMİSİNİZ";
-gameOver.innerText=".";
-gameCelebrate.innerText="TƏBRİKLƏR";
+header.innerText = "5+1 LOTEREYASINA XOŞ GƏLMİSİNİZ";
+gameOver.innerText = ".";
+gameCelebrate.innerText = "TƏBRİKLƏR";
 
 buttonClick.addEventListener("click", () => {
     for (var i = 0; i < 10; i++) {
@@ -89,50 +89,47 @@ buttonClick.addEventListener("click", () => {
             numberP7.innerText = Math.floor(Math.random() * 10);
         }, i * 50)
     }
-    gameOver.style.display='none'
-    gameCelebrate.style.display='none'
+    gameOver.style.display = 'none'
+    gameCelebrate.style.display = 'none'
 })
 buttonClickGameResult.addEventListener("click", () => {
     if (numberP1.innerText[0] === numberP7.innerText[0]) {
-        gameOver.style.display='block';
-    } else if (numberP2.innerText[0] === numberP7.innerText[0])  {
-        gameOver.style.display='block';
-    } else if (numberP3.innerText[0] === numberP7.innerText[0])  {
-        gameOver.style.display='block';
-    } else if (numberP4.innerText[0] === numberP7.innerText[0])  {
-        gameOver.style.display='block';
-    } else if (numberP5.innerText[0] === numberP7.innerText[0])  {
-        gameOver.style.display='block';
+        gameOver.style.display = 'block';
+    } else if (numberP2.innerText[0] === numberP7.innerText[0]) {
+        gameOver.style.display = 'block';
+    } else if (numberP3.innerText[0] === numberP7.innerText[0]) {
+        gameOver.style.display = 'block';
+    } else if (numberP4.innerText[0] === numberP7.innerText[0]) {
+        gameOver.style.display = 'block';
+    } else if (numberP5.innerText[0] === numberP7.innerText[0]) {
+        gameOver.style.display = 'block';
+    } else if ((numberP1.innerText[0] === numberP2.innerText[0]) === numberP7.innerText[0]) {
+        gameCelebrate.style.display = 'block';
+    } else if ((numberP1.innerText[0] && numberP3.innerText[0]) === numberP7.innerText[0]) {
+        gameCelebrate.style.display = 'block';
+    } else if ((numberP1.innerText[0] && numberP4.innerText[0]) === numberP7.innerText[0]) {
+        gameCelebrate.style.display = 'block';
+    } else if ((numberP1.innerText[0] && numberP5.innerText[0]) === numberP7.innerText[0]) {
+        gameCelebrate.style.display = 'block';
+    } else if ((numberP2.innerText[0] && numberP3.innerText[0]) === numberP7.innerText[0]) {
+        gameCelebrate.style.display = 'block';
+    } else if ((numberP2.innerText[0] && numberP4.innerText[0]) === numberP7.innerText[0]) {
+        gameCelebrate.style.display = 'block';
+    } else if ((numberP2.innerText[0] && numberP5.innerText[0]) === numberP7.innerText[0]) {
+        gameCelebrate.style.display = 'block';
+    } else if ((numberP3.innerText[0] && numberP4.innerText[0]) === numberP7.innerText[0]) {
+        gameCelebrate.style.display = 'block';
+    } else if ((numberP3.innerText[0] && numberP5.innerText[0]) === numberP7.innerText[0]) {
+        gameCelebrate.style.display = 'block';
+    } else if ((numberP4.innerText[0] && numberP5.innerText[0]) === numberP7.innerText[0]) {
+        gameCelebrate.style.display = 'block';
     }
     else {
-        gameCelebrate.style.display='block';
+        gameOver.style.display = 'block';
     }
 })
 buttonClickGameResult.addEventListener("click", () => {
-    if ((numberP1.innerText[0] === numberP2.innerText[0]) === numberP7.innerText[0]) {
-        gameCelebrate.style.display='block';
-    } else if ((numberP1.innerText[0] && numberP3.innerText[0]) === numberP7.innerText[0]) {
-        gameCelebrate.style.display='block';
-    }else if ((numberP1.innerText[0] && numberP4.innerText[0]) === numberP7.innerText[0]) {
-        gameCelebrate.style.display='block';
-    } else if ((numberP1.innerText[0] && numberP5.innerText[0]) === numberP7.innerText[0]) {
-        gameCelebrate.style.display='block';
-    } else if ((numberP2.innerText[0] && numberP3.innerText[0]) === numberP7.innerText[0]) {
-        gameCelebrate.style.display='block';
-    } else if ((numberP2.innerText[0] && numberP4.innerText[0]) === numberP7.innerText[0]) {
-        gameCelebrate.style.display='block';
-    } else if ((numberP2.innerText[0] && numberP5.innerText[0]) === numberP7.innerText[0]) {
-        gameCelebrate.style.display='block';
-    } else if ((numberP3.innerText[0] && numberP4.innerText[0]) === numberP7.innerText[0]) {
-        gameCelebrate.style.display='block';
-    } else if ((numberP3.innerText[0] && numberP5.innerText[0]) === numberP7.innerText[0]) {
-        gameCelebrate.style.display='block';
-    } else if ((numberP4.innerText[0] && numberP5.innerText[0]) === numberP7.innerText[0]) {
-        gameCelebrate.style.display='block';
-    }
-    else {
-        gameOver.style.display='block';
-    }
+    if 
 })
 
 
